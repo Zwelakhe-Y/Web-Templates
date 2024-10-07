@@ -6,6 +6,16 @@ body{
     background-color: grey;
 }
 
+div.article{
+    table-layout: auto;
+    text-align: center;
+    margin-left: 50%;
+}
+
+p{
+    table-layout: column;
+}
+
 
 // header nav
 
