@@ -1,0 +1,73 @@
+$width: 130%;
+$height: 130%;
+
+
+body{
+    background-color: grey;
+}
+
+
+// header nav
+
+header{
+    text-align: center;
+}
+ ul{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+ }
+
+ 
+
+
+
+// Footer contact info
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+img.icon{
+    height: auto;
+    width: 20px;
+}
+
+
+.icon:hover > i {
+    scale: 1.2;
+    color: brown;
+}
+
+.icon:before{
+    background: var(--color);
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+}
+
+.icon:hover::before{
+    animation: slide 0.7s forwards;
+}
+
+@keyframes slide{
+    50%{
+        left: 10%;
+        top: -40%;
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+}
+
+footer{
+    text-align: center;
+}
